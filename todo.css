@@ -1,0 +1,98 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+.container
+{
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(2, 46, 35);
+    padding: 10px;
+}
+.todoapp
+{
+    width: 100%;
+    max-width: 540px;
+    background: whitesmoke;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 50px;
+}
+.todoapp h3{
+    color: rgb(26, 9, 87);
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.row
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:white;
+    border-radius: 40px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+input{
+    border: none;
+    outline: none;
+     flex: 1;
+    border: none;
+    padding: 10px;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: red;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+ol li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ol li::before{
+    content:' ';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-size: cover;
+    background-image: url(https://cms-assets.tutsplus.com/cdn-cgi/image/width=850/uploads/users/523/posts/32694/final_image/tutorial-preview-large.png);
+    background-position: center;
+    top:12px;
+    left: 8px;
+}
+ol li.checked
+{
+    color: red;
+    text-decoration: line-through;
+}
+ol li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 0px;
+    font-size: 22px;
+    color: red;
+    text-align: center;
+    border-radius: 50%;
+}
+
+
+ol li span:hover{
+    background: #edeef0;
+    border-radius: 50%;
+}
